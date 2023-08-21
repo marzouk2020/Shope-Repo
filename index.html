@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="user">
+        <title>تسجيل الدخول</title>
+        <h2>تسجيل الدخول</h2>
+        <form action="login.php" method="post">
+        <div>
+            <label>اسم المستخدم:</label>
+            <input type="text" name="username" required>
+        </div>
+            <div>
+                <label>كلمة المرور:</label>
+                <input type="password" name="password" required>
+            </div>
+            <button type="submit" name="login">تسجيل الدخول</button>
+            <a href="forgot_password.php">نسيت كلمة المرور؟</a>
+        </form>
+    </div>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">التسامح</a>
@@ -30,10 +48,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">الاتصال</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"> <button><a href="https://example.com/buy">شراء</a></button></a>
-                    </li>
+                    </li>                  
                 </ul>
             </div>
         </nav>
